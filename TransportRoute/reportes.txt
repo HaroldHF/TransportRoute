@@ -1,0 +1,43 @@
+Estaciones (in-order): 1 Central, 2 Mercado, 3 Universidad, 4 Norte, 5 Sur
+[2025-11-08 23:23:07] ReloadClosures: applied=true
+Estaciones (in-order): 1 Central, 2 Mercado, 3 Universidad, 4 Norte, 5 Sur
+[2025-11-08 23:23:07] LoadAll: estaciones=5 verticesGraficados=5
+[2025-11-08 23:23:14] DFS start=0 order=
+[2025-11-08 23:23:22] DFS start=1 order=1,2,5,3,4
+[2025-11-08 23:23:32] Kruskal edges=4 total=41
+[2025-11-08 23:35:26] Kruskal edges=4 total=41
+[2025-11-08 23:35:37] DFS start=1 order=1,2,5,3,4
+[2025-11-08 23:35:42] ReloadClosures: applied=true
+[2025-11-08 23:35:44] ReloadClosures: applied=true
+Estaciones (in-order): 1 Central, 2 Mercado, 3 Universidad, 4 Norte, 5 Sur
+[2025-11-08 23:35:44] LoadAll: estaciones=5 verticesGraficados=5
+[2025-11-08 23:35:49] DFS start=1 order=1,2,5,3,4
+[2025-11-08 23:35:50] ReloadClosures: applied=true
+[2025-11-08 23:57:18] ReloadClosures: applied=true
+Estaciones (in-order): 1 Central, 2 Mercado, 3 Universidad, 4 Norte, 5 Sur
+[2025-11-08 23:57:18] LoadAll: estaciones=5 verticesGraficados=5
+[2025-11-08 23:57:40] ReloadClosures: applied=true
+Estaciones (in-order): 1 Central, 2 Mercado, 3 Universidad, 4 Norte, 5 Sur
+[2025-11-08 23:57:40] LoadAll: estaciones=5 verticesGraficados=5
+[2025-11-08 23:57:51] ReloadClosures: applied=true
+Estaciones (in-order): 1 Central, 2 Mercado, 3 Universidad, 4 Norte, 5 Sur
+[2025-11-08 23:57:51] LoadAll: estaciones=5 verticesGraficados=5
+[2025-11-08 23:59:44] ReloadClosures: applied=true
+Estaciones (in-order): 1 Central, 2 Mercado, 3 Universidad, 4 Norte, 5 Sur
+[2025-11-08 23:59:44] LoadAll: estaciones=5 verticesGraficados=5
+[2025-11-08 23:59:56] ReloadClosures: applied=true
+Estaciones (in-order): 1 Central, 2 Mercado, 3 Universidad, 4 Norte, 5 Sur
+[2025-11-08 23:59:56] LoadAll: estaciones=5 verticesGraficados=5
+[2025-11-09 00:02:36] ReloadClosures: applied=true
+Estaciones (in-order): 1 Central, 2 Mercado, 3 Universidad, 4 Norte, 5 Sur
+[2025-11-09 00:02:36] LoadAll: estaciones=5 verticesGraficados=5
+Ruta (Dijkstra): 
+[2025-11-09 00:02:40] Dijkstra 0->0 reachable=0 cost=inf path=
+[2025-11-09 00:02:46] BFS start=3 order=3,1,4,2,5
+[2025-11-09 00:02:52] DFS start=3 order=3,1,2,5,4
+[2025-11-09 00:02:54] DFS start=3 order=3,1,2,5,4
+[2025-11-09 00:02:57] Kruskal edges=4 total=41
+[2025-11-09 00:03:00] ReloadClosures: applied=true
+Estaciones (in-order): 1 Central, 2 Mercado, 3 Universidad, 4 Norte, 5 Sur
+[2025-11-09 00:03:00] LoadAll: estaciones=5 verticesGraficados=5
+[2025-11-09 00:03:01] ReloadClosures: applied=true

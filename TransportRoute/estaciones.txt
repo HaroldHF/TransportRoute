@@ -1,0 +1,6 @@
+# id;nombre
+1;Central
+2;Mercado
+3;Universidad
+4;Norte
+5;Sur
