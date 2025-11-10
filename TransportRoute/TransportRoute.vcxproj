@@ -98,6 +98,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="AccidentsFile.cpp" />
+    <ClCompile Include="EdgeItem.cpp" />
+    <ClCompile Include="MapConfigIO.cpp" />
+    <ClCompile Include="NodeItem.cpp" />
+    <ClCompile Include="PositionsIO.cpp" />
     <ClCompile Include="TraversalsFile.cpp" />
     <QtRcc Include="TransportRoute.qrc" />
     <QtUic Include="TransportRoute.ui" />
@@ -129,8 +133,12 @@
     <ClInclude Include="Dijkstra.h" />
     <ClInclude Include="DisjointSet.h" />
     <ClInclude Include="Edge.h" />
+    <QtMoc Include="EdgeItem.h" />
     <ClInclude Include="FloydWarshall.h" />
     <ClInclude Include="Graph.h" />
+    <QtMoc Include="NodeItem.h" />
+    <ClInclude Include="MapConfigIO.h" />
+    <ClInclude Include="PositionsIO.h" />
     <ClInclude Include="TraversalsFile.h" />
     <QtMoc Include="GraphScene.h" />
     <ClInclude Include="GraphView.h" />

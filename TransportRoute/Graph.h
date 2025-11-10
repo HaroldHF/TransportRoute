@@ -45,6 +45,32 @@ namespace transport {
             auto it = adj_.find(id);
             return it == adj_.end() ? empty : it->second;
         }
+
+        bool removeEdge(int u, int v) {
+            auto rm = [](std::vector<AdjEdge>& vec, int to) {
+                auto it = std::remove_if(vec.begin(), vec.end(), [&](const AdjEdge& e) { return e.to == to; });
+                bool changed = (it != vec.end());
+                vec.erase(it, vec.end());
+                return changed;
+                };
+            auto itU = adj_.find(u), itV = adj_.find(v);
+            bool a = false, b = false;
+            if (itU != adj_.end()) a = rm(itU->second, v);
+            if (itV != adj_.end()) b = rm(itV->second, u);
+            return a || b;
+        }
+
+        bool setWeight(int u, int v, double w) {
+            bool touched = false;
+            auto itU = adj_.find(u), itV = adj_.find(v);
+            if (itU != adj_.end()) {
+                for (auto& e : itU->second) if (e.to == v) { e.w = w; touched = true; }
+            }
+            if (itV != adj_.end()) {
+                for (auto& e : itV->second) if (e.to == u) { e.w = w; touched = true; }
+            }
+            return touched;
+        }
     };
 
 } // namespace transport

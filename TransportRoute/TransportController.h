@@ -39,6 +39,9 @@ namespace transport {
         bool removeStation(int id);
         bool addRoute(int u, int v, double w) { graph.addEdge(u, v, w, false); invalidateAllPairs(); return true; }
         bool exportGraphSummary();
+        bool removeEdge(int u, int v);
+        bool setClosed(int u, int v, bool closed);
+        bool renameStation(int id, const std::string& newName);
 
         // consultas
         VisitResult   runBFS(int start);

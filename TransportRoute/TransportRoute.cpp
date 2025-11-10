@@ -2,6 +2,10 @@
 #include <QGraphicsView>
 #include <QMessageBox>
 #include <QCloseEvent>
+#include <QInputDialog>
+#include <QMenu>
+#include <QCursor>
+
 
 TransportRoute::TransportRoute(QWidget* parent)
     : QMainWindow(parent)
@@ -18,9 +22,126 @@ TransportRoute::TransportRoute(QWidget* parent)
     connect(ui.btnSaveStations, &QPushButton::clicked, this, &TransportRoute::onSaveStations);
     connect(ui.btnSaveRoutes, &QPushButton::clicked, this, &TransportRoute::onSaveRoutes);
     connect(ui.btnRun, &QPushButton::clicked, this, &TransportRoute::onRun);
+    connect(scene_, &GraphScene::contextOnEmpty, this, [this](const QPointF& sp) {
+        if (mode_ == EditMode::AddStation) {
+            bool ok = false;
+            int id = QInputDialog::getInt(this, "Nueva estacion", "ID:", 0, 0, 1000000, 1, &ok);
+            if (!ok) return;
+            QString name = QInputDialog::getText(this, "Nueva estacion", "Nombre:");
+            controller_.addStation(id, name.toStdString());
+            // reflejar posicion elegida
+            auto pos = scene_->positions();
+            auto pos2 = pos; pos2[id] = sp;
+            scene_->setPositions(pos2);
+            scene_->drawGraph();
+            statusBar()->showMessage("Estacion agregada", 2000);
+        }
+        });
+
+    connect(scene_, &GraphScene::nodeContext, this, [this](NodeItem* node, const QPointF& sp) {
+        QMenu m;
+        auto* actRename = m.addAction("Renombrar…");
+        auto* actDelete = m.addAction("Eliminar estacion");
+        auto* actConnect = m.addAction("Conectar…");
+
+        QAction* a = m.exec(QCursor::pos());
+        if (a == actRename) {
+            QString name = QInputDialog::getText(this, "Renombrar", "Nuevo nombre:");
+            if (!name.isEmpty()) {
+                controller_.removeStation(node->id()); // simple: quitar y re-insertar con nombre
+                controller_.addStation(node->id(), name.toStdString());
+                scene_->drawGraph();
+            }
+        }
+        else if (a == actDelete) {
+            controller_.removeStation(node->id());
+            // quitar aristas en archivo: opcional (puedes regenerar rutas.txt luego)
+            scene_->drawGraph();
+        }
+        else if (a == actConnect) {
+            mode_ = EditMode::Connect;
+            pendingConnectFirst_ = node->id();
+            statusBar()->showMessage("Selecciona la segunda estacion para conectar…");
+        }
+        });
+
+    connect(scene_, &GraphScene::requestEdgeMenu, this, [this](EdgeItem* ed, const QPointF&) {
+        QMenu m;
+        auto* actWeight = m.addAction("Editar peso…");
+        auto* actToggle = m.addAction(ed->closed() ? "Abrir via" : "Cerrar via");
+        auto* actDelete = m.addAction("Eliminar via");
+        QAction* a = m.exec(QCursor::pos());
+
+        if (a == actWeight) {
+            bool ok = false;
+            double nw = QInputDialog::getDouble(this, "Peso", "Minutos:", ed->w(), 0, 1e9, 2, &ok);
+            if (ok) {
+                // simplificado: elimina y crea de nuevo con nuevo peso
+                controller_.saveRoutes(); // por ahora guardamos luego de re-crear (si implementas addRoute/removeRoute mejor)
+                // para el demo: reescribe el archivo rutas.txt a mano si gustas
+                statusBar()->showMessage("Peso actualizado (recarga rutas para ver cambios)", 2500);
+            }
+        }
+        else if (a == actToggle) {
+            controller_.reloadClosures(); // si usas cierres.txt; para toggle dinamico deberias exponer setClosed en controller
+            scene_->drawGraph();
+        }
+        else if (a == actDelete) {
+            // necesitaras un removeEdge(u,v) en el controller/graph para borrarla realmente
+            QMessageBox::information(this, "Aviso", "Implementa removeEdge(u,v) en el Core para borrar permanentemente.");
+        }
+        });
+
+    connect(scene_, &GraphScene::nodeMoved, this, [this](int, QPointF) {
+        // auto-guardar posiciones opcional
+        });
+    connect(scene_, &GraphScene::nodeContext, this, [this](NodeItem* node, const QPointF&) {
+        // Si estamos conectando y ya tenemos la primera seleccionada:
+        if (mode_ == EditMode::Connect && pendingConnectFirst_ != -1 && pendingConnectFirst_ != node->id()) {
+            bool ok = false;
+            double w = QInputDialog::getDouble(this, "Peso", "Minutos:", 5.0, 0, 1e9, 2, &ok);
+            if (ok) {
+                // requiere controller_.addRoute(u,v,w)
+                if (controller_.addRoute(pendingConnectFirst_, node->id(), w)) {
+                    scene_->drawGraph();
+                    statusBar()->showMessage("Conectadas", 2000);
+                }
+                else {
+                    QMessageBox::warning(this, "Error", "No se pudo agregar la via.");
+                }
+            }
+            mode_ = EditMode::Move;
+            pendingConnectFirst_ = -1;
+            return; // no abrir menu contextual normal
+        }
+
+        // --- menu contextual normal de la estacion ---
+        QMenu m;
+        auto* actRename = m.addAction("Renombrar…");
+        auto* actDelete = m.addAction("Eliminar estacion");
+        auto* actConnect = m.addAction("Conectar…");
+        QAction* a = m.exec(QCursor::pos());
+
+        if (a == actRename) {
+            QString name = QInputDialog::getText(this, "Renombrar", "Nuevo nombre:");
+            if (!name.isEmpty()) {
+                controller_.renameStation(node->id(), name.toStdString()); // mejor que remove+add
+                scene_->drawGraph();
+            }
+        }
+        else if (a == actDelete) {
+            // opcional: controller_.removeVertexAndEdges(node->id()) si lo implementas
+            controller_.removeStation(node->id());
+            scene_->drawGraph();
+        }
+        else if (a == actConnect) {
+            mode_ = EditMode::Connect;
+            pendingConnectFirst_ = node->id();
+            statusBar()->showMessage("Selecciona la segunda estacion para conectar…");
+        }
+        });
 
     // valores por defecto
-    ui.cmbAlgo->setCurrentIndex(2); // Dijkstra por defecto
     onLoadAll(); // auto-carga al iniciar
     controller_.exportTraversals(); // opcional: regenerar recorridos al iniciar
 }

@@ -91,6 +91,18 @@
     <ClCompile Include="AccidentsFile.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="NodeItem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EdgeItem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PositionsIO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MapConfigIO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Station.h">
@@ -153,9 +165,21 @@
     <ClInclude Include="AccidentsFile.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="PositionsIO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MapConfigIO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="GraphScene.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="NodeItem.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="EdgeItem.h">
       <Filter>Header Files</Filter>
     </QtMoc>
   </ItemGroup>

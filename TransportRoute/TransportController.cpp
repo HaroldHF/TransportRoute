@@ -129,6 +129,26 @@ namespace transport {
         return true;
     }
 
+
+    bool TransportController::removeEdge(int u, int v) {
+        // implementa en Graph un removeEdge(u,v) para ambas direcciones
+        invalidateAllPairs();
+        return saveRoutes();
+    }
+
+    bool TransportController::setClosed(int u, int v, bool c) {
+        bool ok = graph.setClosed(u, v, c);
+        invalidateAllPairs();
+        // opcional: persistir esto en cierres.txt (sobrescribir)
+        return ok;
+    }
+
+    bool TransportController::renameStation(int id, const std::string& name) {
+        removeStation(id);
+        addStation(id, name);
+        return saveStations();
+    }
+
     VisitResult TransportController::runBFS(int start) {
         auto r = AlgoFacade::runBFS(graph, start);
         std::ostringstream os; os << "[" << nowStamp() << "] BFS start=" << start << " order=";

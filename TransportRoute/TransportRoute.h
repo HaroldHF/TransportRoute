@@ -22,6 +22,11 @@ private slots:
     void onRun();
 
 private:
+    enum class EditMode { Move, AddStation, Connect };
+    EditMode mode_ = EditMode::Move;
+    int pendingConnectFirst_ = -1;
+    QString positionsPath_ = "positions.txt";
+    QString mapCfgPath_ = "map.cfg";
     Ui::TransportRouteClass ui;
     GraphScene* scene_ = nullptr;
     transport::TransportController controller_;
