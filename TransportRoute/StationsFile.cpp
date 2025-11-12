@@ -1,5 +1,4 @@
 #include "StationsFile.h"
-#include "StationsFile.h"
 #include <fstream>
 #include <sstream>
 
@@ -13,10 +12,18 @@ namespace transport {
         while (std::getline(in, line)) {
             if (line.empty() || line[0] == '#') continue;
             std::stringstream ss(line);
-            std::string idStr, name;
-            if (std::getline(ss, idStr, ';') && std::getline(ss, name)) {
+            std::string idStr, name, xStr, yStr;
+
+            // Leer id;nombre;x;y
+            if (std::getline(ss, idStr, ';') &&
+                std::getline(ss, name, ';') &&
+                std::getline(ss, xStr, ';') &&
+                std::getline(ss, yStr)) {
+
                 int id = std::stoi(idStr);
-                out.emplace_back(id, name);
+                double x = std::stod(xStr);
+                double y = std::stod(yStr);
+                out.emplace_back(id, name, x, y);
             }
         }
         return out;
@@ -25,8 +32,10 @@ namespace transport {
     bool StationsFile::save(const std::string& path, const std::vector<Station>& stations) {
         std::ofstream out(path, std::ios::trunc);
         if (!out) return false;
-        out << "# id;nombre\n";
-        for (const auto& s : stations) out << s.id << ";" << s.name << "\n";
+        out << "# id;nombre;x;y\n";
+        for (const auto& s : stations) {
+            out << s.id << ";" << s.name << ";" << s.x << ";" << s.y << "\n";
+        }
         return true;
     }
 

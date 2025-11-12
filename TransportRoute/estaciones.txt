@@ -1,6 +1,6 @@
-# id;nombre
-1;Central
-2;Mercado
-3;Universidad
-4;Norte
-5;Sur
+# id;nombre;x;y
+1;Central;452;323
+2;Mercado;600;250
+3;Universidad;312;307
+4;Norte;532;297
+5;Sur;650;500

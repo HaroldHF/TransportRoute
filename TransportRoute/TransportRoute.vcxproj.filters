@@ -32,9 +32,6 @@
     <QtMoc Include="TransportRoute.h">
       <Filter>Header Files</Filter>
     </QtMoc>
-    <ClCompile Include="TransportRoute.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -82,9 +79,6 @@
     <ClCompile Include="TransportController.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="GraphScene.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="TraversalsFile.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -101,6 +95,18 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="MapConfigIO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RouteEdge.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MapCanvas.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StationNode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TransportRoute.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -173,13 +179,16 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <QtMoc Include="GraphScene.h">
-      <Filter>Header Files</Filter>
-    </QtMoc>
     <QtMoc Include="NodeItem.h">
       <Filter>Header Files</Filter>
     </QtMoc>
-    <QtMoc Include="EdgeItem.h">
+    <QtMoc Include="RouteEdge.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="MapCanvas.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="StationNode.h">
       <Filter>Header Files</Filter>
     </QtMoc>
   </ItemGroup>

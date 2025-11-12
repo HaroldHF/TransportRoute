@@ -99,9 +99,12 @@
   <ItemGroup>
     <ClCompile Include="AccidentsFile.cpp" />
     <ClCompile Include="EdgeItem.cpp" />
+    <ClCompile Include="MapCanvas.cpp" />
     <ClCompile Include="MapConfigIO.cpp" />
     <ClCompile Include="NodeItem.cpp" />
     <ClCompile Include="PositionsIO.cpp" />
+    <ClCompile Include="RouteEdge.cpp" />
+    <ClCompile Include="StationNode.cpp" />
     <ClCompile Include="TraversalsFile.cpp" />
     <QtRcc Include="TransportRoute.qrc" />
     <QtUic Include="TransportRoute.ui" />
@@ -114,14 +117,18 @@
     <ClCompile Include="DisjointSet.cpp" />
     <ClCompile Include="FloydWarshall.cpp" />
     <ClCompile Include="Graph.cpp" />
-    <ClCompile Include="GraphScene.cpp" />
     <ClCompile Include="Kruskal.cpp" />
     <ClCompile Include="Prim.cpp" />
     <ClCompile Include="ReportsFile.cpp" />
     <ClCompile Include="RoutesFile.cpp" />
     <ClCompile Include="StationsFile.cpp" />
     <ClCompile Include="TransportController.cpp" />
-    <ClCompile Include="TransportRoute.cpp" />
+    <ClCompile Include="TransportRoute.cpp">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">input</DynamicSource>
+      <QtMocFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(Filename).moc</QtMocFileName>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">input</DynamicSource>
+      <QtMocFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(Filename).moc</QtMocFileName>
+    </ClCompile>
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -133,14 +140,15 @@
     <ClInclude Include="Dijkstra.h" />
     <ClInclude Include="DisjointSet.h" />
     <ClInclude Include="Edge.h" />
-    <QtMoc Include="EdgeItem.h" />
     <ClInclude Include="FloydWarshall.h" />
     <ClInclude Include="Graph.h" />
     <QtMoc Include="NodeItem.h" />
+    <QtMoc Include="MapCanvas.h" />
     <ClInclude Include="MapConfigIO.h" />
     <ClInclude Include="PositionsIO.h" />
+    <QtMoc Include="RouteEdge.h" />
+    <QtMoc Include="StationNode.h" />
     <ClInclude Include="TraversalsFile.h" />
-    <QtMoc Include="GraphScene.h" />
     <ClInclude Include="GraphView.h" />
     <ClInclude Include="Kruskal.h" />
     <ClInclude Include="Prim.h" />

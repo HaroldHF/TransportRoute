@@ -1,36 +1,42 @@
 #pragma once
 #include <QtWidgets/QMainWindow>
+#include <QVBoxLayout>
+#include <QHBoxLayout>
+#include <QPushButton>
+#include <QLabel>
+#include <QStatusBar>
 #include "ui_TransportRoute.h"
-
-#include "GraphScene.h"
-
-// incluye el controlador del Core (ajusta la ruta al instalar TransportCore en include paths)
 #include "TransportController.h"
+#include "MapCanvas.h"
 
-class TransportRoute : public QMainWindow
-{
+class TransportRoute : public QMainWindow {
     Q_OBJECT
+
 public:
     TransportRoute(QWidget* parent = nullptr);
     ~TransportRoute();
 
 private slots:
-    void onLoadAll();
-    void onReloadClosures();
-    void onSaveStations();
-    void onSaveRoutes();
-    void onRun();
+    void onLoadData();
+    void onSaveData();
+    void onAddStation();
+    void onStationClicked(int id);
+    void onStationMoved(int id, double x, double y);
 
 private:
-    enum class EditMode { Move, AddStation, Connect };
-    EditMode mode_ = EditMode::Move;
-    int pendingConnectFirst_ = -1;
-    QString positionsPath_ = "positions.txt";
-    QString mapCfgPath_ = "map.cfg";
+    void setupUI();
+    void setupConnections();
+    void updateStatusBar();
+
     Ui::TransportRouteClass ui;
-    GraphScene* scene_ = nullptr;
-    transport::TransportController controller_;
-    void closeEvent(QCloseEvent* e) override;
-    void log(const QString& s);
-    void refreshScene();
+
+    // Core
+    transport::TransportController controller;
+
+    // Widgets
+    MapCanvas* mapCanvas;
+    QPushButton* btnLoad;
+    QPushButton* btnSave;
+    QPushButton* btnAddStation;
+    QLabel* lblStatus;
 };

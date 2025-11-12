@@ -1,121 +1,422 @@
+[2025-11-12 12:22:05] ReloadClosures: applied=true
 Estaciones (in-order): 1 Central, 2 Mercado, 3 Universidad, 4 Norte, 5 Sur
-[2025-11-08 23:23:07] ReloadClosures: applied=true
+[2025-11-12 12:22:05] LoadAll: estaciones=5 verticesGraficados=5
+[2025-11-12 12:22:22] BFS start=0 order=
+[2025-11-12 12:22:40] BFS start=3 order=3,1,4,2,5
+[2025-11-12 12:22:54] BFS start=3 order=3,1,4,2,5
+[2025-11-12 13:37:01] ReloadClosures: applied=true
 Estaciones (in-order): 1 Central, 2 Mercado, 3 Universidad, 4 Norte, 5 Sur
-[2025-11-08 23:23:07] LoadAll: estaciones=5 verticesGraficados=5
-[2025-11-08 23:23:14] DFS start=0 order=
-[2025-11-08 23:23:22] DFS start=1 order=1,2,5,3,4
-[2025-11-08 23:23:32] Kruskal edges=4 total=41
-[2025-11-08 23:35:26] Kruskal edges=4 total=41
-[2025-11-08 23:35:37] DFS start=1 order=1,2,5,3,4
-[2025-11-08 23:35:42] ReloadClosures: applied=true
-[2025-11-08 23:35:44] ReloadClosures: applied=true
+[2025-11-12 13:37:01] LoadAll: estaciones=5 verticesGraficados=5
+[2025-11-12 13:37:08] RemoveStation id=1 ok=1
+[2025-11-12 13:37:08] RemoveStation id=1 ok=1
+[2025-11-12 13:37:08] RemoveStation id=1 ok=1
+[2025-11-12 13:37:08] RemoveStation id=1 ok=1
+[2025-11-12 13:37:08] RemoveStation id=1 ok=1
+[2025-11-12 13:37:08] RemoveStation id=1 ok=1
+[2025-11-12 13:37:08] RemoveStation id=1 ok=1
+[2025-11-12 13:37:08] RemoveStation id=1 ok=1
+[2025-11-12 13:37:08] RemoveStation id=1 ok=1
+[2025-11-12 13:37:08] RemoveStation id=1 ok=1
+[2025-11-12 13:37:08] RemoveStation id=1 ok=1
+[2025-11-12 13:37:08] RemoveStation id=1 ok=1
+[2025-11-12 13:37:09] RemoveStation id=1 ok=1
+[2025-11-12 13:37:09] RemoveStation id=1 ok=1
+[2025-11-12 13:37:09] RemoveStation id=1 ok=1
+[2025-11-12 13:37:09] RemoveStation id=1 ok=1
+[2025-11-12 13:37:09] RemoveStation id=1 ok=1
+[2025-11-12 13:37:09] RemoveStation id=1 ok=1
+[2025-11-12 13:37:09] RemoveStation id=1 ok=1
+[2025-11-12 13:37:09] RemoveStation id=1 ok=1
+[2025-11-12 13:37:09] RemoveStation id=1 ok=1
+[2025-11-12 13:37:09] RemoveStation id=1 ok=1
+[2025-11-12 13:37:09] RemoveStation id=1 ok=1
+[2025-11-12 13:37:09] RemoveStation id=1 ok=1
+[2025-11-12 13:37:09] RemoveStation id=1 ok=1
+[2025-11-12 13:37:09] RemoveStation id=1 ok=1
+[2025-11-12 13:37:09] RemoveStation id=1 ok=1
+[2025-11-12 13:37:09] RemoveStation id=1 ok=1
+[2025-11-12 13:37:09] RemoveStation id=1 ok=1
+[2025-11-12 13:37:09] RemoveStation id=1 ok=1
+[2025-11-12 13:37:09] RemoveStation id=1 ok=1
+[2025-11-12 13:37:09] RemoveStation id=1 ok=1
+[2025-11-12 13:37:09] RemoveStation id=1 ok=1
+[2025-11-12 13:37:09] RemoveStation id=1 ok=1
+[2025-11-12 13:37:09] RemoveStation id=1 ok=1
+[2025-11-12 13:37:09] RemoveStation id=1 ok=1
+[2025-11-12 13:37:09] RemoveStation id=1 ok=1
+[2025-11-12 13:37:09] RemoveStation id=1 ok=1
+[2025-11-12 13:37:09] RemoveStation id=1 ok=1
+[2025-11-12 13:37:09] RemoveStation id=1 ok=1
+[2025-11-12 13:37:09] RemoveStation id=1 ok=1
+[2025-11-12 13:37:09] RemoveStation id=1 ok=1
+[2025-11-12 13:37:09] RemoveStation id=1 ok=1
+[2025-11-12 13:37:09] RemoveStation id=1 ok=1
+[2025-11-12 13:37:10] RemoveStation id=2 ok=1
+[2025-11-12 13:37:10] RemoveStation id=2 ok=1
+[2025-11-12 13:37:10] RemoveStation id=2 ok=1
+[2025-11-12 13:37:10] RemoveStation id=2 ok=1
+[2025-11-12 13:37:10] RemoveStation id=2 ok=1
+[2025-11-12 13:37:10] RemoveStation id=2 ok=1
+[2025-11-12 13:37:10] RemoveStation id=2 ok=1
+[2025-11-12 13:37:10] RemoveStation id=2 ok=1
+[2025-11-12 13:37:10] RemoveStation id=2 ok=1
+[2025-11-12 13:37:10] RemoveStation id=2 ok=1
+[2025-11-12 13:37:10] RemoveStation id=2 ok=1
+[2025-11-12 13:37:10] RemoveStation id=2 ok=1
+[2025-11-12 13:37:10] RemoveStation id=2 ok=1
+[2025-11-12 13:37:10] RemoveStation id=2 ok=1
+[2025-11-12 13:37:10] RemoveStation id=2 ok=1
+[2025-11-12 13:37:10] RemoveStation id=2 ok=1
+[2025-11-12 13:37:10] RemoveStation id=2 ok=1
+[2025-11-12 13:37:10] RemoveStation id=2 ok=1
+[2025-11-12 13:37:10] RemoveStation id=2 ok=1
+[2025-11-12 13:37:10] RemoveStation id=2 ok=1
+[2025-11-12 13:37:10] RemoveStation id=2 ok=1
+[2025-11-12 13:37:10] RemoveStation id=2 ok=1
+[2025-11-12 13:37:10] RemoveStation id=2 ok=1
+[2025-11-12 13:37:10] RemoveStation id=2 ok=1
+[2025-11-12 13:37:10] RemoveStation id=2 ok=1
+[2025-11-12 13:37:10] RemoveStation id=2 ok=1
+[2025-11-12 13:37:44] RemoveStation id=10 ok=1
+[2025-11-12 13:37:44] RemoveStation id=10 ok=1
+[2025-11-12 13:37:44] RemoveStation id=10 ok=1
+[2025-11-12 13:37:44] RemoveStation id=10 ok=1
+[2025-11-12 13:37:44] RemoveStation id=10 ok=1
+[2025-11-12 13:37:44] RemoveStation id=10 ok=1
+[2025-11-12 13:37:44] RemoveStation id=10 ok=1
+[2025-11-12 13:37:44] RemoveStation id=10 ok=1
+[2025-11-12 13:37:44] RemoveStation id=10 ok=1
+[2025-11-12 13:37:44] RemoveStation id=10 ok=1
+[2025-11-12 13:37:44] RemoveStation id=10 ok=1
+[2025-11-12 13:37:44] RemoveStation id=10 ok=1
+[2025-11-12 13:37:44] RemoveStation id=10 ok=1
+[2025-11-12 13:37:44] RemoveStation id=10 ok=1
+[2025-11-12 13:37:46] RemoveStation id=4 ok=1
+[2025-11-12 13:37:46] RemoveStation id=4 ok=1
+[2025-11-12 13:37:46] RemoveStation id=4 ok=1
+[2025-11-12 13:37:46] RemoveStation id=4 ok=1
+[2025-11-12 13:37:46] RemoveStation id=4 ok=1
+[2025-11-12 13:37:46] RemoveStation id=4 ok=1
+[2025-11-12 13:37:46] RemoveStation id=4 ok=1
+[2025-11-12 13:37:46] RemoveStation id=4 ok=1
+[2025-11-12 13:37:46] RemoveStation id=4 ok=1
+[2025-11-12 13:37:46] RemoveStation id=4 ok=1
+[2025-11-12 13:37:46] RemoveStation id=4 ok=1
+[2025-11-12 13:37:46] RemoveStation id=4 ok=1
+[2025-11-12 13:37:46] RemoveStation id=4 ok=1
+[2025-11-12 13:37:46] RemoveStation id=4 ok=1
+[2025-11-12 13:37:46] RemoveStation id=4 ok=1
+[2025-11-12 13:37:46] RemoveStation id=4 ok=1
+[2025-11-12 13:37:50] ReloadClosures: applied=true
 Estaciones (in-order): 1 Central, 2 Mercado, 3 Universidad, 4 Norte, 5 Sur
-[2025-11-08 23:35:44] LoadAll: estaciones=5 verticesGraficados=5
-[2025-11-08 23:35:49] DFS start=1 order=1,2,5,3,4
-[2025-11-08 23:35:50] ReloadClosures: applied=true
-[2025-11-08 23:57:18] ReloadClosures: applied=true
+[2025-11-12 13:37:50] LoadAll: estaciones=5 verticesGraficados=5
+[2025-11-12 13:37:57] ReloadClosures: applied=true
 Estaciones (in-order): 1 Central, 2 Mercado, 3 Universidad, 4 Norte, 5 Sur
-[2025-11-08 23:57:18] LoadAll: estaciones=5 verticesGraficados=5
-[2025-11-08 23:57:40] ReloadClosures: applied=true
+[2025-11-12 13:37:57] LoadAll: estaciones=5 verticesGraficados=5
+[2025-11-12 13:37:58] RemoveStation id=4 ok=1
+[2025-11-12 13:37:58] RemoveStation id=4 ok=1
+[2025-11-12 13:37:58] RemoveStation id=4 ok=1
+[2025-11-12 13:37:58] RemoveStation id=4 ok=1
+[2025-11-12 13:37:58] RemoveStation id=4 ok=1
+[2025-11-12 13:37:58] RemoveStation id=4 ok=1
+[2025-11-12 13:37:58] RemoveStation id=4 ok=1
+[2025-11-12 13:37:58] RemoveStation id=4 ok=1
+[2025-11-12 13:37:58] RemoveStation id=4 ok=1
+[2025-11-12 13:37:58] RemoveStation id=4 ok=1
+[2025-11-12 13:37:58] RemoveStation id=4 ok=1
+[2025-11-12 13:37:58] RemoveStation id=4 ok=1
+[2025-11-12 13:37:58] RemoveStation id=4 ok=1
+[2025-11-12 13:37:59] RemoveStation id=4 ok=1
+[2025-11-12 13:37:59] RemoveStation id=4 ok=1
+[2025-11-12 13:37:59] RemoveStation id=4 ok=1
+[2025-11-12 13:37:59] RemoveStation id=4 ok=1
+[2025-11-12 13:37:59] RemoveStation id=4 ok=1
+[2025-11-12 13:37:59] RemoveStation id=4 ok=1
+[2025-11-12 13:37:59] RemoveStation id=4 ok=1
+[2025-11-12 13:37:59] RemoveStation id=4 ok=1
+[2025-11-12 13:37:59] RemoveStation id=4 ok=1
+[2025-11-12 13:37:59] RemoveStation id=4 ok=1
+[2025-11-12 13:37:59] RemoveStation id=4 ok=1
+[2025-11-12 13:37:59] RemoveStation id=4 ok=1
+[2025-11-12 13:37:59] RemoveStation id=4 ok=1
+[2025-11-12 13:37:59] RemoveStation id=4 ok=1
+[2025-11-12 13:37:59] RemoveStation id=4 ok=1
+[2025-11-12 13:37:59] RemoveStation id=4 ok=1
+[2025-11-12 13:37:59] RemoveStation id=4 ok=1
+[2025-11-12 13:37:59] RemoveStation id=4 ok=1
+[2025-11-12 13:37:59] RemoveStation id=4 ok=1
+[2025-11-12 13:37:59] RemoveStation id=1 ok=1
+[2025-11-12 13:37:59] RemoveStation id=1 ok=1
+[2025-11-12 13:37:59] RemoveStation id=1 ok=1
+[2025-11-12 13:38:00] RemoveStation id=1 ok=1
+[2025-11-12 13:38:00] RemoveStation id=1 ok=1
+[2025-11-12 13:38:00] RemoveStation id=1 ok=1
+[2025-11-12 13:38:00] RemoveStation id=1 ok=1
+[2025-11-12 13:38:00] RemoveStation id=1 ok=1
+[2025-11-12 13:38:00] RemoveStation id=1 ok=1
+[2025-11-12 13:38:00] RemoveStation id=1 ok=1
+[2025-11-12 13:38:00] RemoveStation id=1 ok=1
+[2025-11-12 13:38:00] RemoveStation id=1 ok=1
+[2025-11-12 13:38:00] RemoveStation id=1 ok=1
+[2025-11-12 13:38:00] RemoveStation id=1 ok=1
+[2025-11-12 13:38:00] RemoveStation id=1 ok=1
+[2025-11-12 13:38:00] RemoveStation id=1 ok=1
+[2025-11-12 13:38:00] RemoveStation id=1 ok=1
+[2025-11-12 13:38:00] RemoveStation id=1 ok=1
+[2025-11-12 13:38:00] RemoveStation id=1 ok=1
+[2025-11-12 13:38:00] RemoveStation id=1 ok=1
+[2025-11-12 13:38:03] RemoveStation id=3 ok=1
+[2025-11-12 13:38:03] RemoveStation id=3 ok=1
+[2025-11-12 13:38:03] RemoveStation id=3 ok=1
+[2025-11-12 13:38:03] RemoveStation id=3 ok=1
+[2025-11-12 13:38:03] RemoveStation id=3 ok=1
+[2025-11-12 13:38:03] RemoveStation id=3 ok=1
+[2025-11-12 13:38:03] RemoveStation id=3 ok=1
+[2025-11-12 13:38:03] RemoveStation id=3 ok=1
+[2025-11-12 13:38:03] RemoveStation id=3 ok=1
+[2025-11-12 13:38:03] RemoveStation id=3 ok=1
+[2025-11-12 13:38:03] RemoveStation id=3 ok=1
+[2025-11-12 13:38:03] RemoveStation id=3 ok=1
+[2025-11-12 13:38:03] RemoveStation id=3 ok=1
+[2025-11-12 13:38:03] RemoveStation id=3 ok=1
+[2025-11-12 13:38:03] RemoveStation id=3 ok=1
+[2025-11-12 13:38:03] RemoveStation id=3 ok=1
+[2025-11-12 13:38:03] RemoveStation id=3 ok=1
+[2025-11-12 13:38:10] ReloadClosures: applied=true
 Estaciones (in-order): 1 Central, 2 Mercado, 3 Universidad, 4 Norte, 5 Sur
-[2025-11-08 23:57:40] LoadAll: estaciones=5 verticesGraficados=5
-[2025-11-08 23:57:51] ReloadClosures: applied=true
+[2025-11-12 13:38:10] LoadAll: estaciones=5 verticesGraficados=5
+[2025-11-12 13:38:14] RemoveStation id=4 ok=1
+[2025-11-12 13:38:14] RemoveStation id=4 ok=1
+[2025-11-12 13:38:14] RemoveStation id=4 ok=1
+[2025-11-12 13:38:14] RemoveStation id=4 ok=1
+[2025-11-12 13:38:14] RemoveStation id=4 ok=1
+[2025-11-12 13:38:14] RemoveStation id=4 ok=1
+[2025-11-12 13:38:14] RemoveStation id=4 ok=1
+[2025-11-12 13:38:14] RemoveStation id=4 ok=1
+[2025-11-12 13:38:14] RemoveStation id=4 ok=1
+[2025-11-12 13:38:14] RemoveStation id=4 ok=1
+[2025-11-12 13:38:14] RemoveStation id=4 ok=1
+[2025-11-12 13:38:14] RemoveStation id=4 ok=1
+[2025-11-12 13:38:15] RemoveStation id=1 ok=1
+[2025-11-12 13:38:15] RemoveStation id=1 ok=1
+[2025-11-12 13:38:15] RemoveStation id=1 ok=1
+[2025-11-12 13:38:15] RemoveStation id=1 ok=1
+[2025-11-12 13:38:15] RemoveStation id=1 ok=1
+[2025-11-12 13:38:15] RemoveStation id=1 ok=1
+[2025-11-12 13:38:15] RemoveStation id=1 ok=1
+[2025-11-12 13:38:15] RemoveStation id=1 ok=1
+[2025-11-12 13:38:15] RemoveStation id=1 ok=1
+[2025-11-12 13:38:15] RemoveStation id=1 ok=1
+[2025-11-12 13:38:15] RemoveStation id=1 ok=1
+[2025-11-12 13:38:15] RemoveStation id=1 ok=1
+[2025-11-12 13:38:15] RemoveStation id=1 ok=1
+[2025-11-12 13:38:15] RemoveStation id=1 ok=1
+[2025-11-12 13:38:16] ReloadClosures: applied=true
 Estaciones (in-order): 1 Central, 2 Mercado, 3 Universidad, 4 Norte, 5 Sur
-[2025-11-08 23:57:51] LoadAll: estaciones=5 verticesGraficados=5
-[2025-11-08 23:59:44] ReloadClosures: applied=true
+[2025-11-12 13:38:16] LoadAll: estaciones=5 verticesGraficados=5
+[2025-11-12 13:38:54] ReloadClosures: applied=true
 Estaciones (in-order): 1 Central, 2 Mercado, 3 Universidad, 4 Norte, 5 Sur
-[2025-11-08 23:59:44] LoadAll: estaciones=5 verticesGraficados=5
-[2025-11-08 23:59:56] ReloadClosures: applied=true
-Estaciones (in-order): 1 Central, 2 Mercado, 3 Universidad, 4 Norte, 5 Sur
-[2025-11-08 23:59:56] LoadAll: estaciones=5 verticesGraficados=5
-[2025-11-09 00:02:36] ReloadClosures: applied=true
-Estaciones (in-order): 1 Central, 2 Mercado, 3 Universidad, 4 Norte, 5 Sur
-[2025-11-09 00:02:36] LoadAll: estaciones=5 verticesGraficados=5
-Ruta (Dijkstra): 
-[2025-11-09 00:02:40] Dijkstra 0->0 reachable=0 cost=inf path=
-[2025-11-09 00:02:46] BFS start=3 order=3,1,4,2,5
-[2025-11-09 00:02:52] DFS start=3 order=3,1,2,5,4
-[2025-11-09 00:02:54] DFS start=3 order=3,1,2,5,4
-[2025-11-09 00:02:57] Kruskal edges=4 total=41
-[2025-11-09 00:03:00] ReloadClosures: applied=true
-Estaciones (in-order): 1 Central, 2 Mercado, 3 Universidad, 4 Norte, 5 Sur
-[2025-11-09 00:03:00] LoadAll: estaciones=5 verticesGraficados=5
-[2025-11-09 00:03:01] ReloadClosures: applied=true
-[2025-11-09 00:10:22] ReloadClosures: applied=true
-Estaciones (in-order): 1 Central, 2 Mercado, 3 Universidad, 4 Norte, 5 Sur
-[2025-11-09 00:10:22] LoadAll: estaciones=5 verticesGraficados=5
-Ruta (Dijkstra): 
-[2025-11-09 00:10:25] Dijkstra 0->0 reachable=0 cost=inf path=
-Ruta (Dijkstra): 
-[2025-11-09 00:10:29] Dijkstra 0->0 reachable=0 cost=inf path=
-Ruta (Dijkstra): 
-[2025-11-09 00:10:31] Dijkstra 0->0 reachable=0 cost=inf path=
-Ruta (Dijkstra): 
-[2025-11-09 00:10:35] Dijkstra 1->0 reachable=0 cost=inf path=
-Ruta (Dijkstra): 1 Central -> 3 Universidad
-[2025-11-09 00:10:37] Dijkstra 1->3 reachable=1 cost=15 path=1-3
-Ruta (Dijkstra): 1 Central -> 3 Universidad
-[2025-11-09 00:10:40] Dijkstra 1->3 reachable=1 cost=15 path=1-3
-Ruta (Dijkstra): 1 Central -> 2 Mercado -> 5 Sur
-[2025-11-09 00:10:50] Dijkstra 1->5 reachable=1 cost=18.5 path=1-2-5
-[2025-11-09 00:21:13] ReloadClosures: applied=true
-Estaciones (in-order): 1 Central, 2 Mercado, 3 Universidad, 4 Norte, 5 Sur
-[2025-11-09 00:21:13] LoadAll: estaciones=5 verticesGraficados=5
-Ruta (Dijkstra): 
-[2025-11-09 00:21:17] Dijkstra 0->0 reachable=0 cost=inf path=
-Ruta (FloydWarshall): 
-[2025-11-09 00:21:28] Floyd 0->0 reachable=0 cost=inf path=
-Ruta (FloydWarshall): 
-[2025-11-09 00:21:32] Floyd 3->0 reachable=0 cost=inf path=
-Ruta (FloydWarshall): 3 Universidad -> 1 Central
-[2025-11-09 00:21:34] Floyd 3->1 reachable=1 cost=15 path=3-1
-Ruta (FloydWarshall): 5 Sur -> 2 Mercado -> 1 Central
-[2025-11-09 00:21:39] Floyd 5->1 reachable=1 cost=18.5 path=5-2-1
-[2025-11-09 00:21:43] BFS start=5 order=5,2,1,3,4
-[2025-11-09 00:21:57] ReloadClosures: applied=true
-Estaciones (in-order): 1 Central, 2 Mercado, 3 Universidad, 4 Norte, 5 Sur
-[2025-11-09 00:21:57] LoadAll: estaciones=5 verticesGraficados=5
-[2025-11-09 00:21:59] BFS start=0 order=
-[2025-11-10 11:38:43] ReloadClosures: applied=true
-Estaciones (in-order): 1 Central, 2 Mercado, 3 Universidad, 4 Norte, 5 Sur
-[2025-11-10 11:38:43] LoadAll: estaciones=5 verticesGraficados=5
-[2025-11-10 11:38:49] BFS start=0 order=
-Ruta (Dijkstra): 
-[2025-11-10 11:38:54] Dijkstra 0->0 reachable=0 cost=inf path=
-Ruta (Dijkstra): 
-[2025-11-10 11:38:57] Dijkstra 1->0 reachable=0 cost=inf path=
-[2025-11-10 11:39:04] ReloadClosures: applied=true
-Estaciones (in-order): 1 Central, 2 Mercado, 3 Universidad, 4 Norte, 5 Sur
-[2025-11-10 11:39:04] LoadAll: estaciones=5 verticesGraficados=5
-[2025-11-10 11:39:06] ReloadClosures: applied=true
-Ruta (Dijkstra): 
-[2025-11-10 11:39:11] Dijkstra 1->0 reachable=0 cost=inf path=
-Ruta (Dijkstra): 1 Central -> 2 Mercado -> 5 Sur
-[2025-11-10 11:39:17] Dijkstra 1->5 reachable=1 cost=18.5 path=1-2-5
-[2025-11-10 12:09:56] ReloadClosures: applied=true
-Estaciones (in-order): 1 Central, 2 Mercado, 3 Universidad, 4 Norte, 5 Sur
-[2025-11-10 12:09:56] LoadAll: estaciones=5 verticesGraficados=5
-[2025-11-10 12:09:59] BFS start=0 order=
-[2025-11-10 12:10:08] BFS start=0 order=
-[2025-11-10 12:10:16] BFS start=0 order=
-Ruta (Dijkstra): 1 Central -> 3 Universidad
-[2025-11-10 12:10:22] Dijkstra 1->3 reachable=1 cost=15 path=1-3
-Ruta (Dijkstra): 1 Central -> 3 Universidad
-[2025-11-10 12:10:28] Dijkstra 1->3 reachable=1 cost=15 path=1-3
-Ruta (Dijkstra): 1 Central -> 3 Universidad
-[2025-11-10 12:10:32] Dijkstra 1->3 reachable=1 cost=15 path=1-3
-Ruta (Dijkstra): 1 Central -> 3 Universidad
-[2025-11-10 12:10:34] Dijkstra 1->3 reachable=1 cost=15 path=1-3
-Ruta (Dijkstra): 1 Central -> 3 Universidad
-[2025-11-10 12:10:40] Dijkstra 1->3 reachable=1 cost=15 path=1-3
-Ruta (Dijkstra): 1 Central -> 3 Universidad
-[2025-11-10 12:10:46] Dijkstra 1->3 reachable=1 cost=15 path=1-3
-Ruta (Dijkstra): 1 Central -> 3 Universidad
-[2025-11-10 12:10:49] Dijkstra 1->3 reachable=1 cost=15 path=1-3
-[2025-11-10 12:12:10] ReloadClosures: applied=true
-Estaciones (in-order): 1 Central, 2 Mercado, 3 Universidad, 4 Norte, 5 Sur
-[2025-11-10 12:12:10] LoadAll: estaciones=5 verticesGraficados=5
-[2025-11-10 12:12:36] ReloadClosures: applied=true
-Estaciones (in-order): 1 Central, 2 Mercado, 3 Universidad, 4 Norte, 5 Sur
-[2025-11-10 12:12:36] LoadAll: estaciones=5 verticesGraficados=5
-[2025-11-10 12:12:44] BFS start=0 order=
+[2025-11-12 13:38:54] LoadAll: estaciones=5 verticesGraficados=5
+[2025-11-12 13:39:07] RemoveStation id=1 ok=1
+[2025-11-12 13:39:07] RemoveStation id=1 ok=1
+[2025-11-12 13:39:07] RemoveStation id=1 ok=1
+[2025-11-12 13:39:07] RemoveStation id=1 ok=1
+[2025-11-12 13:39:07] RemoveStation id=1 ok=1
+[2025-11-12 13:39:07] RemoveStation id=1 ok=1
+[2025-11-12 13:39:07] RemoveStation id=1 ok=1
+[2025-11-12 13:39:07] RemoveStation id=1 ok=1
+[2025-11-12 13:39:07] RemoveStation id=1 ok=1
+[2025-11-12 13:39:07] RemoveStation id=1 ok=1
+[2025-11-12 13:39:07] RemoveStation id=1 ok=1
+[2025-11-12 13:39:07] RemoveStation id=1 ok=1
+[2025-11-12 13:39:07] RemoveStation id=1 ok=1
+[2025-11-12 13:39:07] RemoveStation id=1 ok=1
+[2025-11-12 13:39:07] RemoveStation id=1 ok=1
+[2025-11-12 13:39:07] RemoveStation id=1 ok=1
+[2025-11-12 13:39:07] RemoveStation id=1 ok=1
+[2025-11-12 13:39:07] RemoveStation id=1 ok=1
+[2025-11-12 13:39:07] RemoveStation id=1 ok=1
+[2025-11-12 13:39:07] RemoveStation id=1 ok=1
+[2025-11-12 13:39:07] RemoveStation id=1 ok=1
+[2025-11-12 13:39:07] RemoveStation id=1 ok=1
+[2025-11-12 13:39:07] RemoveStation id=1 ok=1
+[2025-11-12 13:39:07] RemoveStation id=1 ok=1
+[2025-11-12 13:39:07] RemoveStation id=1 ok=1
+[2025-11-12 13:39:07] RemoveStation id=1 ok=1
+[2025-11-12 13:39:07] RemoveStation id=1 ok=1
+[2025-11-12 13:39:07] RemoveStation id=1 ok=1
+[2025-11-12 13:39:07] RemoveStation id=1 ok=1
+[2025-11-12 13:39:07] RemoveStation id=1 ok=1
+[2025-11-12 13:39:07] RemoveStation id=1 ok=1
+[2025-11-12 13:39:07] RemoveStation id=1 ok=1
+[2025-11-12 13:39:08] RemoveStation id=1 ok=1
+[2025-11-12 13:39:08] RemoveStation id=1 ok=1
+[2025-11-12 13:39:08] RemoveStation id=1 ok=1
+[2025-11-12 13:39:08] RemoveStation id=1 ok=1
+[2025-11-12 13:39:08] RemoveStation id=1 ok=1
+[2025-11-12 13:39:08] RemoveStation id=1 ok=1
+[2025-11-12 13:39:08] RemoveStation id=1 ok=1
+[2025-11-12 13:39:08] RemoveStation id=1 ok=1
+[2025-11-12 13:39:08] RemoveStation id=1 ok=1
+[2025-11-12 13:39:08] RemoveStation id=1 ok=1
+[2025-11-12 13:40:13] RemoveStation id=4 ok=1
+[2025-11-12 13:40:13] RemoveStation id=4 ok=1
+[2025-11-12 13:40:13] RemoveStation id=4 ok=1
+[2025-11-12 13:40:13] RemoveStation id=4 ok=1
+[2025-11-12 13:40:13] RemoveStation id=4 ok=1
+[2025-11-12 13:40:13] RemoveStation id=4 ok=1
+[2025-11-12 13:40:13] RemoveStation id=4 ok=1
+[2025-11-12 13:40:13] RemoveStation id=4 ok=1
+[2025-11-12 13:40:13] RemoveStation id=4 ok=1
+[2025-11-12 13:40:13] RemoveStation id=4 ok=1
+[2025-11-12 13:40:13] RemoveStation id=4 ok=1
+[2025-11-12 13:40:13] RemoveStation id=4 ok=1
+[2025-11-12 13:40:13] RemoveStation id=4 ok=1
+[2025-11-12 13:40:13] RemoveStation id=4 ok=1
+[2025-11-12 13:40:14] RemoveStation id=2 ok=1
+[2025-11-12 13:40:14] RemoveStation id=2 ok=1
+[2025-11-12 13:40:14] RemoveStation id=2 ok=1
+[2025-11-12 13:40:14] RemoveStation id=2 ok=1
+[2025-11-12 13:40:14] RemoveStation id=2 ok=1
+[2025-11-12 13:40:14] RemoveStation id=2 ok=1
+[2025-11-12 13:40:14] RemoveStation id=2 ok=1
+[2025-11-12 13:40:14] RemoveStation id=2 ok=1
+[2025-11-12 13:40:14] RemoveStation id=2 ok=1
+[2025-11-12 13:40:14] RemoveStation id=2 ok=1
+[2025-11-12 13:40:14] RemoveStation id=2 ok=1
+[2025-11-12 13:40:14] RemoveStation id=2 ok=1
+[2025-11-12 13:40:16] RemoveStation id=1 ok=1
+[2025-11-12 13:40:16] RemoveStation id=1 ok=1
+[2025-11-12 13:40:16] RemoveStation id=1 ok=1
+[2025-11-12 13:40:16] RemoveStation id=1 ok=1
+[2025-11-12 13:40:16] RemoveStation id=1 ok=1
+[2025-11-12 13:40:16] RemoveStation id=1 ok=1
+[2025-11-12 13:40:16] RemoveStation id=1 ok=1
+[2025-11-12 13:40:16] RemoveStation id=1 ok=1
+[2025-11-12 13:40:16] RemoveStation id=1 ok=1
+[2025-11-12 13:40:16] RemoveStation id=1 ok=1
+[2025-11-12 13:40:16] RemoveStation id=1 ok=1
+[2025-11-12 13:40:16] RemoveStation id=1 ok=1
+[2025-11-12 13:40:16] RemoveStation id=1 ok=1
+[2025-11-12 13:40:16] RemoveStation id=1 ok=1
+[2025-11-12 13:40:16] RemoveStation id=1 ok=1
+[2025-11-12 13:40:16] RemoveStation id=1 ok=1
+[2025-11-12 13:40:16] RemoveStation id=1 ok=1
+[2025-11-12 13:40:16] RemoveStation id=1 ok=1
+[2025-11-12 13:40:16] RemoveStation id=1 ok=1
+[2025-11-12 13:40:16] RemoveStation id=1 ok=1
+[2025-11-12 13:40:16] RemoveStation id=1 ok=1
+[2025-11-12 13:40:16] RemoveStation id=1 ok=1
+[2025-11-12 13:40:16] RemoveStation id=1 ok=1
+[2025-11-12 13:40:16] RemoveStation id=1 ok=1
+[2025-11-12 13:40:16] RemoveStation id=1 ok=1
+[2025-11-12 13:40:16] RemoveStation id=1 ok=1
+[2025-11-12 13:40:16] RemoveStation id=1 ok=1
+[2025-11-12 13:40:16] RemoveStation id=1 ok=1
+[2025-11-12 13:40:16] RemoveStation id=1 ok=1
+[2025-11-12 13:40:16] RemoveStation id=1 ok=1
+[2025-11-12 13:40:16] RemoveStation id=1 ok=1
+[2025-11-12 13:40:16] RemoveStation id=1 ok=1
+[2025-11-12 13:40:16] RemoveStation id=1 ok=1
+[2025-11-12 13:40:17] RemoveStation id=4 ok=1
+[2025-11-12 13:40:18] RemoveStation id=4 ok=1
+[2025-11-12 13:40:18] RemoveStation id=4 ok=1
+[2025-11-12 13:40:18] RemoveStation id=4 ok=1
+[2025-11-12 13:40:18] RemoveStation id=4 ok=1
+[2025-11-12 13:40:18] RemoveStation id=4 ok=1
+[2025-11-12 13:40:18] RemoveStation id=4 ok=1
+[2025-11-12 13:40:18] RemoveStation id=4 ok=1
+[2025-11-12 13:40:18] RemoveStation id=4 ok=1
+[2025-11-12 13:40:18] RemoveStation id=4 ok=1
+[2025-11-12 13:40:18] RemoveStation id=4 ok=1
+[2025-11-12 13:40:18] RemoveStation id=4 ok=1
+[2025-11-12 13:40:18] RemoveStation id=4 ok=1
+[2025-11-12 13:40:18] RemoveStation id=4 ok=1
+[2025-11-12 13:40:18] RemoveStation id=4 ok=1
+[2025-11-12 13:40:18] RemoveStation id=4 ok=1
+[2025-11-12 13:40:18] RemoveStation id=4 ok=1
+[2025-11-12 13:40:18] RemoveStation id=4 ok=1
+[2025-11-12 13:40:18] RemoveStation id=4 ok=1
+[2025-11-12 13:40:20] RemoveStation id=5 ok=1
+[2025-11-12 13:40:20] RemoveStation id=5 ok=1
+[2025-11-12 13:40:20] RemoveStation id=5 ok=1
+[2025-11-12 13:40:20] RemoveStation id=5 ok=1
+[2025-11-12 13:40:20] RemoveStation id=5 ok=1
+[2025-11-12 13:40:20] RemoveStation id=5 ok=1
+[2025-11-12 13:40:20] RemoveStation id=5 ok=1
+[2025-11-12 13:40:20] RemoveStation id=5 ok=1
+[2025-11-12 13:40:20] RemoveStation id=5 ok=1
+[2025-11-12 13:40:20] RemoveStation id=5 ok=1
+[2025-11-12 13:40:20] RemoveStation id=5 ok=1
+[2025-11-12 13:40:20] RemoveStation id=5 ok=1
+[2025-11-12 13:40:20] RemoveStation id=5 ok=1
+[2025-11-12 13:40:20] RemoveStation id=5 ok=1
+[2025-11-12 13:40:20] RemoveStation id=5 ok=1
+[2025-11-12 13:40:20] RemoveStation id=5 ok=1
+[2025-11-12 13:40:20] RemoveStation id=5 ok=1
+[2025-11-12 13:40:20] RemoveStation id=5 ok=1
+[2025-11-12 13:40:20] RemoveStation id=5 ok=1
+[2025-11-12 13:40:21] RemoveStation id=5 ok=1
+[2025-11-12 13:40:21] RemoveStation id=5 ok=1
+[2025-11-12 13:40:21] RemoveStation id=5 ok=1
+[2025-11-12 13:40:21] RemoveStation id=5 ok=1
+[2025-11-12 13:40:21] RemoveStation id=5 ok=1
+[2025-11-12 13:40:21] RemoveStation id=5 ok=1
+[2025-11-12 13:40:22] RemoveStation id=3 ok=1
+[2025-11-12 13:40:22] RemoveStation id=3 ok=1
+[2025-11-12 13:40:22] RemoveStation id=3 ok=1
+[2025-11-12 13:40:22] RemoveStation id=3 ok=1
+[2025-11-12 13:40:22] RemoveStation id=3 ok=1
+[2025-11-12 13:40:22] RemoveStation id=3 ok=1
+[2025-11-12 13:40:22] RemoveStation id=3 ok=1
+[2025-11-12 13:40:22] RemoveStation id=3 ok=1
+[2025-11-12 13:40:22] RemoveStation id=3 ok=1
+[2025-11-12 13:40:22] RemoveStation id=3 ok=1
+[2025-11-12 13:40:22] RemoveStation id=3 ok=1
+[2025-11-12 13:40:22] RemoveStation id=3 ok=1
+[2025-11-12 13:40:22] RemoveStation id=3 ok=1
+[2025-11-12 13:40:22] RemoveStation id=3 ok=1
+[2025-11-12 13:40:23] RemoveStation id=5 ok=1
+[2025-11-12 13:40:23] RemoveStation id=5 ok=1
+[2025-11-12 13:40:23] RemoveStation id=5 ok=1
+[2025-11-12 13:40:23] RemoveStation id=5 ok=1
+[2025-11-12 13:40:23] RemoveStation id=5 ok=1
+[2025-11-12 13:40:23] RemoveStation id=5 ok=1
+[2025-11-12 13:40:23] RemoveStation id=5 ok=1
+[2025-11-12 13:40:23] RemoveStation id=5 ok=1
+[2025-11-12 13:40:23] RemoveStation id=5 ok=1
+[2025-11-12 13:40:23] RemoveStation id=5 ok=1
+[2025-11-12 13:40:23] RemoveStation id=5 ok=1
+[2025-11-12 13:40:23] RemoveStation id=5 ok=1
+[2025-11-12 13:40:23] RemoveStation id=5 ok=1
+[2025-11-12 13:40:23] RemoveStation id=5 ok=1
+[2025-11-12 13:40:23] RemoveStation id=5 ok=1
+[2025-11-12 13:40:24] RemoveStation id=5 ok=1
+[2025-11-12 13:40:24] RemoveStation id=5 ok=1
+[2025-11-12 13:40:24] RemoveStation id=5 ok=1
+[2025-11-12 13:40:24] RemoveStation id=5 ok=1
+[2025-11-12 13:40:24] RemoveStation id=5 ok=1
+[2025-11-12 13:40:24] RemoveStation id=3 ok=1
+[2025-11-12 13:40:24] RemoveStation id=3 ok=1
+[2025-11-12 13:40:25] RemoveStation id=3 ok=1
+[2025-11-12 13:40:25] RemoveStation id=3 ok=1
+[2025-11-12 13:40:25] RemoveStation id=3 ok=1
+[2025-11-12 13:40:25] RemoveStation id=3 ok=1
+[2025-11-12 13:40:25] RemoveStation id=3 ok=1
+[2025-11-12 13:40:25] RemoveStation id=3 ok=1
+[2025-11-12 13:40:26] RemoveStation id=3 ok=1
+[2025-11-12 13:40:26] RemoveStation id=3 ok=1
+[2025-11-12 13:40:26] RemoveStation id=3 ok=1
+[2025-11-12 13:40:26] RemoveStation id=3 ok=1
+[2025-11-12 13:40:26] RemoveStation id=3 ok=1
+[2025-11-12 13:40:26] RemoveStation id=3 ok=1
+[2025-11-12 13:40:26] RemoveStation id=3 ok=1
+[2025-11-12 13:40:27] RemoveStation id=3 ok=1
+[2025-11-12 13:40:27] RemoveStation id=3 ok=1
+[2025-11-12 13:40:27] RemoveStation id=3 ok=1
+[2025-11-12 13:40:27] RemoveStation id=5 ok=1
+[2025-11-12 13:40:27] RemoveStation id=5 ok=1
+[2025-11-12 13:40:27] RemoveStation id=5 ok=1
+[2025-11-12 13:40:27] RemoveStation id=5 ok=1
+[2025-11-12 13:40:28] RemoveStation id=5 ok=1
+[2025-11-12 13:40:28] RemoveStation id=5 ok=1
